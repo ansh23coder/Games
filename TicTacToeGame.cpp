@@ -72,7 +72,7 @@ bool rowCrossed(char board[][SIDE])
 {
     for (int i = 0; i < SIDE; i++)
     {
-        if (board[i][0] == board[i][1] && board[i][1] == board[i][2] && board[i][0] != ' ')
+        if (board[i][0] == board[i][1] && board[i][1] == board[i][2] && board[i][0]  != ' ')
             return true;
     }
     return false;
@@ -164,10 +164,8 @@ void playTicTacToe(int whoseTurn)
 }
 
 // Driver program
-int main()
-{
+int main(){
     // Let us play the game with COMPUTER starting first
     playTicTacToe(COMPUTER);
-
     return 0;
 }
